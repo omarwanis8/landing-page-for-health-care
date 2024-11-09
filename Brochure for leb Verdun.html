@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.imgur.com/SHEtT6V.png">
+    <script src="https://kit.fontawesome.com/cece0bbfcd.js" crossorigin="anonymous"></script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            position: relative;
+            overflow-x: hidden;
+            
+        }
+
+       
+
+        body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://i.imgur.com/bNbjv2Z.jpeg);
+    background-size: cover;  /* Change from contain to cover */
+    background-repeat: no-repeat;
+    background-position: center; /* Ensures image is centered */
+    opacity: 0.5;
+    z-index: -2;
+}
+
+       
+
+       
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            /* background-color: rgba(232, 255, 255, 1); */
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+            
+        }
+
+        .header {
+            text-align: center;
+            background-color: #EF5357;
+            color: #ffffff;
+            padding: 10px 0;
+        }
+
+        .footer{
+            text-align: center;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 10px 0;
+        }
+
+        .content {
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content h2 {
+            color:  #EF5357;
+        }
+
+        .feature, .benefit {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .feature i {
+            font-size: 3em;
+            margin-right: 15px;
+        }
+
+        .benefit img {
+            max-width: 150px;
+            margin-right: 15px;
+        }
+
+        .media-news {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            
+        }
+
+        .media-news .imgbrock{
+            display: flex;
+            justify-content: right;
+        }
+
+        .media-news .imgbrock img{
+            width: 100px;
+            position: absolute;
+            bottom: 330px;
+           
+        }
+
+        .media-news p{
+            width: 80%;
+        }
+
+        .media-news button{
+            background-color: #EF5357;
+            border-radius: 15px;
+            width: 130px;
+            height: 40px;
+            color: white;
+            border: transparent;
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .cta-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color:  #EF5357;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 0;
+            border-radius: 5px;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons i {
+            font-size: 1.3em;
+            margin: 0 10px;
+            color: white;
+        }
+
+        .container .logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            max-width: 200px;
+            position: relative;right: 10px;
+        }
+
+        html {
+            overflow-x: hidden;
+        }
+
+        .container .header .img {
+            margin-top: 20px;
+        }
+
+        .container .header h1 {
+            margin-bottom: 15px;
+        }
+
+        .container .content h2 {
+            margin-top: 10px;
+        }
+
+        .container .content a h4 {
+            color:  #EF5357;
+        }
+
+        .container .content .feature i {
+            font-size: 2.6em;
+        }
+
+        .container .content .feature a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .container .content .feature a:hover {
+            text-decoration: underline;
+            transition: .5s;
+        }
+
+        .container .content .benefit a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .container .content .benefit a:hover {
+            text-decoration: underline;
+            transition: .5s;
+        }
+
+        /* Link in its default state */
+        a:link {
+            color: black;
+        }
+
+        /* Link in its visited state */
+        a:visited {
+            color: black;
+        }
+
+        /* Link in its hover state */
+        a:hover {
+            color: black;
+        }
+
+        /* Link in its active state */
+        a:active {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="backgroundimg"></div>
+        <div class="logo">
+            <img src="https://i.imgur.com/UYKwBwa.png" >
+        </div>
+        
+        <div class="header">
+            <h1>Bienvenue chez Leb Verdun<br>Brochure</h1>
+        </div>
+        <div class="content">
+            <h2>À Propos de Nous :</h2>
+            <p>PRÉCIS, RAPIDES, SÉCURE - ACCURATE, SWIFT, SECURE</p>
+            <p>Le Lab Verdun, fondé par le phlébotomiste Brock Adams, dessert l'arrondissement de Verdun, l'Îledes-Sœurs, Pointe-Saint-Charles et Ville La Salle à Montréal.</p>
+            <p>Le Lab Verdun propose des services rapides et économiques aux clients et résidences pour personnes âgées, avec un accent sur le respect et des soins exceptionnels.</p>
+            <h3 style="color:  #EF5357;">SERVICES</h3>
+            <div class="feature">
+                <a href="https://labverdun.com/" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                <div>
+                    <a href="https://labverdun.com/" target="_blank"><h4>SERVICE CHEZ VOUS</h4></a>
+                    <p>Le service mobile que nous offrons comprend des réservations, des visites sur site, et un soutien complet.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <a href="https://labverdun.com/" target="_blank"><i class="fa-solid fa-file-medical"></i></a>
+                <div>
+                    <a href="https://labverdun.com/" target="_blank"><h4>TESTS SPÉCIALISÉS.</h4></a>
+                    <p>Lab Verdun offre des tests spécialisés avec précision et soin pour répondre à vos besoins médicaux.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <a href="https://labverdun.com/" target="_blank"><i class="fa-solid fa-vial-circle-check"></i></a>
+                <div>
+                    <a href="https://labverdun.com/" target="_blank"><h4>ANALYSES DE SANG.</h4></a>
+                    <p>Lab Verdun offre des services de prélèvement sanguin à Montréal avec précision et soin professionnels.</p>
+                </div>
+            </div>
+            
+            <h3 style="color:  #EF5357;">Raisons de choisir Lab Verdun :</h3>
+            <!-- <div class="benefit">
+                <a href="https://labverdun.com/"><img src="https://i.imgur.com/E5GfJa7.jpeg" alt=""></a>
+                <div>
+                    <a href="https://labverdun.com/"><h4>CONSULTATIONS D'EXPERTS.</h4></a>
+                    <p>Des connaissances médicales expertes fournissant des diagnostics précis et des conseils personnalisés et spécialisés pour chaque patient.</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <a href="https://labverdun.com/"><img src="https://i.imgur.com/n0CmboD.jpeg" alt=""></a>
+                <div>
+                    <a href="https://labverdun.com/"><h4>SPÉCIALISTES MÉDICAUX</h4></a>
+                    <p>Les spécialistes médicaux offrent des soins spécialisés et personnalisés pour répondre aux besoins de chaque patient.</p>
+                </div>
+            </div> -->
+            <div class="benefit">
+                <a href="https://labverdun.com/">  <img src="https://i.imgur.com/OOzOmmW.jpeg" alt=""> </a>
+                <div>
+                    <a href="https://labverdun.com/"><h4>SOINS CONSTANTS</h4></a>
+                    <p>Soins constants" se spécialise dans la prestation de soins de santé à domicile fiables et attentionnés à Montréal.</p>
+                </div>
+            </div>
+           
+            <h3 style="color:  #EF5357;">Biographie</h3>
+            <div class="media-news">
+                
+                <h4 style="color:  #EF5357;">BROCK ADAMS</h4>
+                
+                
+                <p>Brock Adams, phlébotomiste en chef au Lab Verdun, est renommé pour ses compétences exceptionnelles et ses procédures quasi indolores. Recherché de Winnipeg à Kenora, Thunder Bay et à Montréal, il est licencié par la CSMLS et offre aussi un service à domicile respectueux pour les personnes âgées.</p>
+                <p><a href="https://labverdun.com/" target="_blank">Read more</a></p>
+                <div class="imgbrock"><img src="https://i.imgur.com/iGFErPG.jpeg" alt=""></div>
+            </div>
+            <!-- <h3 style="color:  #EF5357;">CONTACTER-NOUS</h3> -->
+            <div class="media-news" style="position: relative;bottom: 30px;">
+                <h4 style="color:  #EF5357;">CONTACTER-NOUS</h4>
+                <p>Au Lab Verdun, nous simplifions la planification de vos soins chez-vous</p>  
+                <!-- <a href="https://labverdun.com/rendez-vous/"> <button>Rendez-Vous</button></a> -->
+            </div>
+
+            <a href="rendezvous@LabVerdun.com" class="cta-button" style="color: #ffffff;">Contact Us</a>
+            <a href="https://labverdun.com/" class="cta-button" style="color: #ffffff;">Visit Our Website</a>
+        </div>
+        <div class="footer">
+            <p>Follow Us:</p>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p>Contact:</p>
+            <p style="color: white;"> <i class="fa-regular fa-envelope"></i> &nbsp; rendezvous@LabVerdun.com</p>
+            <p style="color: white;"><i class="fa-solid fa-phone"></i> &nbsp; (204)227-5050</p>
+            <p>&copy; 2024 Lab Verdun | <a href="https://labverdun.com/" style="color: #ffffff;">Privacy Policy</a> | <a href="https://labverdun.com/" style="color: #ffffff;">Terms of Service</a></p>
+        </div>
+    </div>
+
+
+
+   
+</body>
+</html>
+
